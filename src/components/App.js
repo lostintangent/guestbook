@@ -7,6 +7,9 @@ import pins from "../model/pins";
 import styled, { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
+// Cool!
+
+
 export default function App() {
     return (
         <ThemeProvider theme={theme}>

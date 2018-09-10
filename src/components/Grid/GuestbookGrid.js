@@ -20,6 +20,7 @@ export default class GuestbookGrid extends Component {
   }
 
   componentDidMount() {
+    
     // Determine whether we have any actual signatures
     // before we attempt to start the "active" carousel
     var activeSignatures = this.state.signatures.filter(({ signature }) => typeof signature === "object");
