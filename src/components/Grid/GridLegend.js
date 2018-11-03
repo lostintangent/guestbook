@@ -3,10 +3,10 @@ import React from "react";
 
 import styled from "styled-components";
 
-export default function GridLegend() {
+export default function GridLegend({ bonusLabel = "Bonus", specialLabel = "Special" }) {
     return (
         <Container>
-            <LegendItem><BonusSquare /> = Bonus Cell (<Emoji type="shirt" />)</LegendItem>
+            <LegendItem><BonusSquare /> = {bonusLabel} Cell (<Emoji type="shirt" />)</LegendItem>
             <LegendItem><SpecialSquare /> = Special Cell (<Emoji type="hat" />)</LegendItem>
         </Container>
     );
@@ -28,6 +28,7 @@ const ColorSquare = styled.div`
 
 const BonusSquare = ColorSquare.extend`
     border-color: ${({ theme: { bonusColor }}) => bonusColor};
+    border-width: 5px;
 `;
 
 const SpecialSquare = ColorSquare.extend`
