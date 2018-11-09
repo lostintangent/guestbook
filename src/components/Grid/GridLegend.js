@@ -26,12 +26,11 @@ const ColorSquare = styled.div`
     width: 20px;
 `;
 
-const BonusSquare = ColorSquare.extend`
+const BonusSquare = styled(ColorSquare)`
     border-color: ${({ theme: { bonusColor }}) => bonusColor};
-    border-width: 5px;
 `;
 
-const SpecialSquare = ColorSquare.extend`
+const SpecialSquare = styled(ColorSquare)`
     border-color: ${({ theme: { specialColor }}) => specialColor};
 `;
 

@@ -4,7 +4,7 @@
         "browser": true
     },
     "rules": {
-        "no-var": "warn",
+        "no-var": "error",
         "react/prop-types": "off"
     },
     "parserOptions": {

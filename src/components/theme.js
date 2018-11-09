@@ -1,6 +1,6 @@
-import { injectGlobal } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-injectGlobal`
+export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +13,7 @@ injectGlobal`
   }
 `;
 
-export default {
+export const theme = {
     bonusColor: "orange",
     borderStyle: "0.5px solid #666",
     cellSize: "30px",

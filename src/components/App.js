@@ -5,7 +5,7 @@ import React from "react";
 
 import pins from "../model/pins";
 import styled, { ThemeProvider } from "styled-components";
-import theme from "./theme";
+import { theme, GlobalStyle } from "./theme";
 
 export default function App() {
     return (
@@ -14,6 +14,7 @@ export default function App() {
                 <Header />
                 <GuestbookGrid />
                 <GuestbookMap pins={pins} />
+                <GlobalStyle />
             </AppContainer>
         </ThemeProvider>
     );
