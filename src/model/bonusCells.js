@@ -1,5 +1,5 @@
 const bonusCells = [18, 87, 131, 274, 412, 518];
-const specialCells = [37, 337];
+let specialCells = [37, 337];
 
 /**
  * Determine whether a specific matrix cell represents a bonus cell.
