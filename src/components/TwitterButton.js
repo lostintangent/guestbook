@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import { observable } from "mobx";
 
 export default class TwitterButton extends Component {
     render() {
-        const unused = 1;
         const tag = this.props.hashTag || React.Children.only(this.props.children);
         return <a className="twitter-hashtag-button"
             href={`https://twitter.com/intent/tweet?button_hashtag=${tag}`}>Tweet #{tag}</a>
