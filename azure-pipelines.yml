@@ -12,19 +12,10 @@ steps:
 - script: yarn test
   displayName: Run tests
 
-- task: DotNetCoreInstaller@0
-  displayName: 'Use .NET Core sdk 2.1.300'
+- task: RichCodeNavIndexer@0
   inputs:
-    version: 2.1.300
-
-- task: NuGetToolInstaller@0
-  displayName: 'Use NuGet 4.3.0'
-
-- task: vsintellinav.vsck-service-endpoint.build-task.upload-cache-build-task@0
-  displayName: 'VS IntelliNav Upload'
-  inputs:
-    vsckEndpoint: 'vscloudkernel-dev'
-    nugetpat: 'vscloudkernel-nuget'
-    language: javascript
-    githubpat: 'vsls-contrib'
-    nugetVersion: '0.1.806-alpha-g2adb5dd333'
+    serviceConnection: 'rich-code-nav'
+    nugetServiceConnection: 'rich-code-nav-nuget'
+    githubServiceConnection: 'vsls-contrib'
+    languages: javascript
+    serviceEndpoint: 'https://prod.richnav.vsengsaas.visualstudio.com'
