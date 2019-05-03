@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { observable } from "mobx";
 
 export default class TwitterButton extends Component {
     render() {
