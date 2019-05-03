@@ -3,7 +3,8 @@
     "target": "ES6",
     "module": "commonjs",
     "outDir": "out",
-    "rootDir": "src"
+    "rootDir": "src",
+    "noUnusedLocals": true
   },
   "include": [
     "src/**/*.js"
