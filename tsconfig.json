@@ -8,6 +8,7 @@
     "rootDir": "src",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true,
     "jsx": "react"
   },
   "include": [
