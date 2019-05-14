@@ -12,6 +12,7 @@ steps:
 - script: yarn test
   displayName: Run tests
 
+
 - task: RichCodeNavIndexer@0
   inputs:
     serviceConnection: 'rich-code-nav'
