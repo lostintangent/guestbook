@@ -17,4 +17,3 @@ steps:
     serviceConnection: 'rich-code-nav'
     githubServiceConnection: 'vsls-contrib'
     languages: typescript
-    nugetVersion: '0.1.946-alpha'
