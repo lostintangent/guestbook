@@ -12,9 +12,9 @@ steps:
 - script: yarn test
   displayName: Run tests
 
-
 - task: RichCodeNavIndexer@0
   inputs:
     serviceConnection: 'rich-code-nav'
     githubServiceConnection: 'vsls-contrib'
     languages: typescript
+    nugetVersion: '0.1.946-alpha'
