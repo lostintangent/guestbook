@@ -2,6 +2,6 @@
     "extensions": [
         "dbaeumer.vscode-eslint",
         "eamodio.gitlens",
-        "./vscode-richnav.vsix"
+        "/home/cloudenv/workspace/.devcontainer/vscode-richnav.vsix"
     ]
 }
