@@ -2,6 +2,6 @@
     "extensions": [
         "dbaeumer.vscode-eslint",
         "eamodio.gitlens",
-        "vscode-richnav.vsix"
+        "./vscode-richnav.vsix"
     ]
 }
