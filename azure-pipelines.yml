@@ -12,7 +12,7 @@ steps:
 - script: yarn test
   displayName: Run unit tests
 
-- script: yarn add --global npx
+- script: yarn global add npx
   displayName: Install npx
 
 - script: yarn start --silent &
