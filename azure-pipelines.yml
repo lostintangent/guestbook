@@ -12,10 +12,10 @@ steps:
 - script: yarn test
   displayName: Run unit tests
 
-- script: yarn add --global npx wait-on
-  displayName: Install npx and wait-on
+- script: yarn add --global npx
+  displayName: Install npx
 
-- script: yarn start & wait-on http://localhost:3000
+- script: yarn start --silent &
   displayName: Run server for Cypress
 
 - script: npx cypress run
