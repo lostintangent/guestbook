@@ -15,7 +15,7 @@ steps:
 - script: yarn global add npx
   displayName: Install npx
 
-- script: yarn start --silent &
+- script: start /B yarn start --silent
   displayName: Run server for Cypress
 
 - script: npx cypress run
