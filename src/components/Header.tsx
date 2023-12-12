@@ -5,7 +5,7 @@ import iconUrl from "./icon.svg";
 import { Subheading } from "./Subheading";
 import styled from "styled-components";
 
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <Container>
       <div>

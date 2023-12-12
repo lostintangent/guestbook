@@ -1,4 +1,10 @@
-module.exports = [
+interface Signature {
+  handle: string;
+  location: string;
+  message: string;
+}
+
+const signatures: Signature[] = [
   {
     handle: "ashtom",
     location: "California, USA",
@@ -170,3 +176,5 @@ module.exports = [
     message: "I love live share 2",
   },
 ];
+
+export default signatures;

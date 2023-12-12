@@ -6,12 +6,25 @@ import logoImageUrl from "./logo.svg";
 import signatures from "../../model/signatureMatrix";
 import styled from "styled-components";
 
+interface Signature {
+  handle: string;
+  location: string;
+  message: string;
+}
+
+interface SignatureCell {
+  isBonus: boolean;
+  isSpecial: boolean;
+  signature?: Signature;
+  isActive?: boolean;
+}
+
 /**
  * Represents the primary component, which
  * displays the avatars for each user signature.
  */
-export default class GuestbookGrid extends Component {
-  constructor(props) {
+export default class GuestbookGrid extends Component<{}, { signatures: SignatureCell[] }> {
+  constructor(props: {}) {
     super(props);
     this.state = {
       signatures,
@@ -38,7 +51,7 @@ export default class GuestbookGrid extends Component {
    *
    * @param {Array} activeSignatures - An array of active signatures
    */
-  updateActiveSignature(activeSignatures) {
+  updateActiveSignature(activeSignatures: SignatureCell[]) {
     activeSignatures.forEach((signature) => delete signature.isActive);
 
     const activeSignature = Math.floor(Math.random() * activeSignatures.length);

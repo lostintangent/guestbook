@@ -2,7 +2,7 @@ import Emoji from "../Emoji";
 import React from "react";
 import styled from "styled-components";
 
-export default function GridArrow() {
+export default function GridArrow(): JSX.Element {
   return (
     <ArrowContainer>
       <ArrowLabel>
