@@ -1,4 +1,11 @@
-export default [
+interface Pin {
+  location: string;
+  signatureCount: number;
+  latitude: number;
+  longitude: number;
+}
+
+const pins: Pin[] = [
   {
     location: "Seattle",
     signatureCount: 17,
@@ -42,3 +49,5 @@ export default [
     longitude: -82.452606,
   },
 ];
+
+export default pins;
